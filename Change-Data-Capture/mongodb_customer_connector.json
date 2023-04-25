@@ -1,0 +1,13 @@
+{
+    "name": "mongo-customers-sink",
+    "config": {
+      "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
+      "topics": "customers.customer_db.customers",
+      "connection.uri": "mongodb+srv://<mongodb cluster>",
+      "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+      "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+      "value.converter.schemas.enable": false,
+      "database": "ODL",
+      "collection": "customers_landing"
+    }
+  }

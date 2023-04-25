@@ -1,0 +1,4 @@
+curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" <hostname to vm running debezium>:8083/connectors/ --data @customer_debezium.json
+curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" <hostname to vm running debezium>:8083/connectors/ --data @accounts_debezium.json
+curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" <hostname to vm running debezium>:8083/connectors/ --data @mongodb_customer_connector.json
+curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" <hostname to vm running debezium>:8083/connectors/ --data @mongodb_accounts_connector.json
